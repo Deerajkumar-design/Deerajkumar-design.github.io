@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Deerajkumar Parthipan"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Deerajkumar Parthipan"
 description              : &description "personal description"
 url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -22,13 +22,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Deerajkumar Parthipan"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "CAE Analyst | CFD Engineer | Fluid Mechanics | ML and Image Processing | MS Mechanical at Purdue University | B.Tech Mechanical at VIT, Vellore"
+  location         : "Alexandria, VA"
+  employer         : "Purdue University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "deerajofficial@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -82,6 +82,8 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  academics:
+    title: 'Academic Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

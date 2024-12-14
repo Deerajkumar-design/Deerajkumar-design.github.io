@@ -1,0 +1,15 @@
+current directory: /Users/deerajkumarparthipan/portfolio/deerajkumar-design.github.io/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/deerajkumarparthipan/.rbenv/versions/3.1.4/bin/ruby -I /Users/deerajkumarparthipan/.rbenv/versions/3.1.4/lib/ruby/3.1.0 extconf.rb
+creating Makefile
+
+current directory: /Users/deerajkumarparthipan/portfolio/deerajkumar-design.github.io/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241214-62319-uyj59g sitelibdir\=./.gem.20241214-62319-uyj59g clean
+
+current directory: /Users/deerajkumarparthipan/portfolio/deerajkumar-design.github.io/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241214-62319-uyj59g sitelibdir\=./.gem.20241214-62319-uyj59g
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/deerajkumarparthipan/portfolio/deerajkumar-design.github.io/vendor/bundle/ruby/3.1.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241214-62319-uyj59g sitelibdir\=./.gem.20241214-62319-uyj59g install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20241214-62319-uyj59g/racc
