@@ -39,7 +39,7 @@ Key Achievements
 ======
   - **Spaceport America Cup (2021):** Led a team of 25 to design, manufacture and launch a sounding rocket with 8 lbs payload. **Ranked 5th in Asia Pacific**
   - **CanSat Competition (2021):** Designed and developed a maple seed inspired auto-decent payload. **Ranked 13th Worldwide**
-  - **Research Achievements:** Authored 3 journal papers with 2 under review with multiple citations. (add researchgate link)
+  - **Research Achievements:** Authored 3 journal papers with 2 under review with multiple citations.
 
 What Drives Me?
 ======
