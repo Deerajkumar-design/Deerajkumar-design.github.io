@@ -10,6 +10,17 @@ redirect_from:
 I am Deerajkumar Parthipan, a Mechanical Engineering Master’s graduate from Purdue University, with expertise in engineering design, simulation, and data-driven problem solving. My work spans CAD, CFD, CAE, machine learning, and image processing, applied across aerospace, healthcare, robotics and electronics. 
 I thrive in multidisciplinary environments, where collaboration and creativity drive impactful solutions. My work integrates traditional engineering techniques with cutting-edge technologies to solve real-world challenges.
 
+Download My Resume
+======
+[Resume](files/Deerajkumar%20Parthipan%20%7C%20Innovator%20in%20Mechanical%20Engineering%20%26%20Data-Driven%20Solutions.pdf)  
+Click the link above to download my resume and learn more about my expertise and experience.
+
+
+Explore My Work
+======
+To see my engineering journey come to life, head over to the **Gallery** section, where you can explore **CAD designs, simulation results, and project highlights**.
+
+
 Education
 ======
   - **Master’s in Mechanical Engineering, Purdue University, IN** (Graduated December 2024)

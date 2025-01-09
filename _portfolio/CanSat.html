@@ -1,0 +1,183 @@
+---
+title: "CanSat 2021: A Maple Seed-Inspired Space Mission"
+excerpt: "Explore how our CanSat combines engineering, innovation, and aerospace excellence to achieve precise payload deployment and descent control. <br/><img src='/images/gallery/ConOps.png'>"
+collection: portfolio
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanSat Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            margin: 10px 20px;
+            padding: 0;
+            list-style-type: disc;
+        }
+        li {
+            margin: 5px 0;
+        }
+        /* Optional: Style images to be responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        /* Optional: If you want to center images, you can use:
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            height: auto;
+        } */
+    </style>
+</head>
+<body>
+    <h1>CanSat Project Overview</h1>
+    <!-- Example of an image inserted right after the H1 title -->
+    <img src="/images/gallery/Cansat.png" alt="An overview of the CanSat" />
+
+    <p>The CanSat 2021 project involved designing, simulating, and testing a CanSat that featured a container and two auto-rotating maple seed payloads. Our team, Sammard (#1966), successfully achieved the mission objectives by combining innovative mechanical, electrical, and software design principles. The project aimed to demonstrate robust engineering solutions for a challenging aerospace task.</p>
+
+    <h2>Mission Objectives</h2>
+    <!-- Another image can be placed here if desired -->
+    <img src="images/mission_objectives.jpg" alt="Mission Objectives" />
+
+    <h3>Primary Objectives</h3>
+    <ul>
+        <li>Design a CanSat with a container and two science payloads that mimic the behavior of auto-rotating maple seeds.</li>
+        <li>Ensure the CanSat descends at a controlled rate of 15 m/s ± 5 m/s.</li>
+        <li>Deploy the payloads sequentially at altitudes of 500 m and 400 m.</li>
+        <li>Transmit telemetry data from both the container and the payloads to the ground station.</li>
+    </ul>
+    <h3>Secondary Objectives</h3>
+    <ul>
+        <li>Educate the public about aerospace engineering through outreach activities.</li>
+        <li>Foster teamwork and collaboration among team members.</li>
+    </ul>
+    <h3>Constraints</h3>
+    <ul>
+        <li>Total mass: 600 ± 10 grams.</li>
+        <li>Survive 15 Gs of launch acceleration and 30 Gs of shock.</li>
+    </ul>
+
+    <h2>System Overview</h2>
+    <!-- Insert an image here to illustrate the system overview -->
+    <img src="images/system_overview.jpg" alt="System overview diagram" />
+
+    <ul>
+        <li><strong>Container</strong>: A cylindrical structure designed to house and deploy the science payloads. Equipped with a parachute for controlled descent and telemetry systems for data relay.</li>
+        <li><strong>Payloads</strong>: Two auto-rotating maple seed-inspired designs equipped with sensors for measuring altitude, temperature, and rotation rate.</li>
+    </ul>
+
+    <h2>Mechanical Design</h2>
+    <!-- Insert an image related to mechanical design -->
+    <img src="images/mechanical_design.jpg" alt="Mechanical design of the container and payloads" />
+
+    <h3>Container</h3>
+    <ul>
+        <li>Constructed using 3D-printed ABS material for lightweight durability.</li>
+        <li>Carbon fiber spars provided structural integrity.</li>
+        <li>Integrated cavities for servo-driven payload release mechanisms.</li>
+        <li>Parachute attachment point and aerodynamic design ensured stable descent.</li>
+    </ul>
+    <h3>Payloads</h3>
+    <ul>
+        <li>Wings optimized using Blade Element Momentum Theory for efficient drag and lift balance.</li>
+        <li>Constructed with NACA 4415 airfoil cross-sections for optimal aerodynamic performance.</li>
+        <li>Designed for passive auto-rotation upon release.</li>
+    </ul>
+
+    <h2>Electronics and Sensors</h2>
+    <!-- Example image showing electronics or sensor layout -->
+    <img src="images/electronics_sensors.jpg" alt="Electronics and sensor layout" />
+
+    <h3>Container Sensors</h3>
+    <ul>
+        <li>GPS (Ublox NEO-M8N): Real-time position tracking.</li>
+        <li>Pressure Sensor (MS5611): Altitude calculation.</li>
+        <li>Battery voltage monitoring.</li>
+    </ul>
+    <h3>Payload Sensors</h3>
+    <ul>
+        <li>Pressure and temperature sensors.</li>
+        <li>BNO080 gyroscope for rotation rate measurement.</li>
+    </ul>
+    <h3>Telemetry</h3>
+    <ul>
+        <li>Data transmitted via XBee S2C modules to the ground station.</li>
+    </ul>
+
+    <h2>Software Design</h2>
+    <!-- Insert an image related to software design or code architecture -->
+    <img src="images/software_design.jpg" alt="Software design flowchart" />
+
+    <ul>
+        <li><strong>Telemetry</strong>: Real-time data transmission at 1 Hz. Data storage in flash memory for redundancy.</li>
+        <li><strong>Control</strong>: Servo actuation for sequential payload deployment. Simulation mode for pre-launch testing.</li>
+        <li><strong>Ground Station</strong>: Custom GUI for live telemetry display and data logging.</li>
+    </ul>
+
+    <h2>Descent Control</h2>
+    <!-- Insert an image showing parachute design or descent simulation -->
+    <img src="images/descent_control.jpg" alt="Descent control demonstration" />
+
+    <h3>Container</h3>
+    <ul>
+        <li>Parachute with a dome shape and a 5% spill hole ensured stable descent at ~15 m/s.</li>
+    </ul>
+    <h3>Payloads</h3>
+    <ul>
+        <li>Spin-induced passive descent achieved using optimized maple seed-inspired wings.</li>
+        <li>Terminal velocity of ~4.46 m/s ensured controlled descent and safe landing.</li>
+    </ul>
+
+    <h2>Key Achievements</h2>
+    <!-- Insert an image showcasing team achievements or test flight results -->
+    <img src="images/key_achievements.jpg" alt="Key achievements collage" />
+
+    <ul>
+        <li>Successfully tested payload release mechanisms and descent control systems.</li>
+        <li>Developed a robust telemetry system for seamless communication with the ground station.</li>
+        <li>Demonstrated innovative use of CAD, CFD, and simulation tools in the design process.</li>
+        <li>Delivered the CanSat within weight and budget constraints despite pandemic-related challenges.</li>
+    </ul>
+
+    <h2>Challenges and Solutions</h2>
+    <!-- You could use a figure/figcaption for a more descriptive image layout -->
+    <figure>
+        <img src="/images/gallery/ConOps.png" alt="Challenges and solutions illustration" />
+        <figcaption>An overview of the main challenges and their solutions.</figcaption>
+    </figure>
+
+    <ul>
+        <li><strong>Challenge</strong>: Limited resources and laboratory access during the pandemic.<br>
+            <strong>Solution</strong>: Increased reliance on simulation tools and virtual collaboration.</li>
+        <li><strong>Challenge</strong>: High descent velocity of payloads in initial designs.<br>
+            <strong>Solution</strong>: Optimized wing planform area and airfoil design.</li>
+    </ul>
+
+    <h2>Impact and Legacy</h2>
+    <!-- Final image to wrap up the content (e.g., team photo or final product) -->
+    <img src="images/impact_legacy.jpg" alt="Team working on CanSat" />
+
+    <p>This project highlights the team’s ability to integrate multidisciplinary engineering principles into a complex aerospace challenge. It also underscores the importance of collaboration, adaptability, and innovation in achieving ambitious goals under constraints.</p>
+    <footer class="bg-gray-800 text-white py-4 text-center mt-8">
+        <p>© Deerajkumar Parthipan</p>
+    </footer>
+</body>
+</html>

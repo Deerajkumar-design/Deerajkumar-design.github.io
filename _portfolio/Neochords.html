@@ -1,0 +1,150 @@
+---
+title: "Engineering Blood Flow: Analyzing Neochords Surgery for Mitral Valve Optimization"
+excerpt: "An engineering-driven analysis of flow dynamics and hemodynamic efficiency in the left ventricle pre- and post-Neochords surgery using advanced computational methods. <br/><img src='/images/gallery/Blood_flow.gif'>"
+collection: portfolio
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment of Hemodynamic Parameters During Neochords Surgery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .box-plot, .lambda-ci {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .box-plot img, .lambda-ci img {
+            max-width: 45%;
+            margin: 10px;
+        }
+        .methodology-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p><strong>By:</strong> Deerajkumar Parthipan, Brett A. Meyers, Pavlos P. Vlachos</p>
+    </header>
+    <main>
+        <section class="section">
+            <h2>Introduction</h2>
+            <p>Mitral valve regurgitation (MR) is a severe cardiac condition requiring surgical intervention to restore normal heart functionality. Among various surgical techniques, Neochords implantation has shown promise in addressing MR. However, its impact on intraoperative and postoperative hemodynamic parameters and flow patterns remains underexplored. This study investigates the changes in flow dynamics before and after Neochords surgery, aiming to provide deeper insights into its functional outcomes.</p>
+        </section>
+
+        <section class="section">
+            <h2>Objective</h2>
+            <p>The primary objective of this study was to evaluate the alterations in hemodynamic parameters and flow patterns within the left ventricle before and after Neochords surgery using advanced echocardiographic techniques. Specifically, the study focuses on assessing:</p>
+            <ul>
+                <li>Changes in vortex formation and intensity.</li>
+                <li>Variations in flow energy loss (FEL) and pressure dynamics.</li>
+                <li>Impact of Neochords on diastolic and systolic flow behavior.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Motivation</h2>
+            <p>Mitral valve impairment often leads to severe complications like valvular insufficiency and regurgitation, necessitating surgical correction. While Neochords implantation has gained attention as an innovative technique, its impact on left ventricular flow patterns has not been fully characterized. Understanding these changes is crucial to improving surgical outcomes and optimizing postoperative cardiac function.</p>
+            <!-- Add your methodology image here -->
+            <div class="methodology-image">
+                <img src="/images/gallery/autosegmentation.png" alt="Methodology Overview" />
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Methodology</h2>
+            <h3>Data Collection</h3>
+            <ul>
+                <li><strong>Patient Cohort:</strong> Echo images were collected from patients undergoing Mitral Valve (MV) corrective surgery.</li>
+                <li><strong>Imaging Modalities:</strong> Data included Color Flow Imaging (CFI), B-mode, 3D Mitral Valve (MV) views, and 3D MV CFI views. Only CFI and B-mode images were processed for this study.</li>
+                <li><strong>Temporal Division:</strong> Data were categorized into pre- and post-surgery phases for each patient.</li>
+            </ul>
+            <h3>Flow Reconstruction</h3>
+            <ul>
+                <li><strong>Technique:</strong> Doppler Velocity Reconstruction (DoVeR) was employed to reconstruct 2D velocity fields from echocardiographic scans. The algorithm uses a unique streamfunction vorticity formulation to reconstruct blood velocities in the ventricles of heart.</li>
+                <li><strong>Boundary Detection:</strong> Machine vision-based boundary detection algorithms (based on Dijkstra algortithm) were applied to identify and define regions of interest for flow field reconstruction.</li>
+                <li><strong>Statistical Analysis:</strong> Key hemodynamic parameters, including flow energy loss (FEL), Kinetic Energy (KE), pressure dynamics, and vortex intensity, were quantified.</li>
+            </ul>
+            <h3>Vortex Analysis</h3>
+            <ul>
+                <li><strong>Lambda-Ci Criterion:</strong> Vortex detection and intensity quantification were performed using the Lambda-Ci criterion, a robust method combining rotational strength and local pressure variation.</li>
+            </ul>
+            
+            <!-- Add your methodology image here -->
+            <div class="methodology-image">
+                <img src="/images/gallery/DoVer.png" alt="Methodology Overview" />
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Results</h2>
+            <h3>Pre- and Post-Surgery Analysis</h3>
+            <ul>
+                <li><strong>Flow Patterns:</strong> Neochords surgery significantly reduced vortex generation during diastole, suggesting that Neochords act as flow straighteners.</li>
+                <li><strong>Pressure Dynamics:</strong> Reverse pressure improved post-surgery, enhancing efficient blood outflow from the left ventricle.</li>
+                <li><strong>Energy Metrics:</strong>
+                    <ul>
+                        <li>A noticeable reduction in suction pressure and diastolic flow energy loss (FEL).</li>
+                        <li>Peak FEL decreased significantly during diastasis due to reduced vorticity.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Visualization</h3>
+            <div class="lambda-ci">
+                <img src="images/lambda-ci-pre.jpg" alt="Lambda-Ci Pre-Surgery">
+                <img src="images/lambda-ci-post.jpg" alt="Lambda-Ci Post-Surgery">
+            </div>
+            <div class="box-plot">
+                <img src="images/box-plot-pre.jpg" alt="Box Plot Pre-Surgery">
+                <img src="images/box-plot-post.jpg" alt="Box Plot Post-Surgery">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Discussion</h2>
+            <p>While Neochords surgery reduces MR and alters flow patterns positively, the reduction in vorticity during diastole may require additional left ventricular remodeling to achieve optimal functionality. These findings underscore the importance of personalized postoperative care to address residual flow abnormalities.</p>
+        </section>
+
+        <section class="section">
+            <h2>Conclusion</h2>
+            <p>This study provides a comprehensive assessment of Neochords surgery's impact on left ventricular flow dynamics. By quantifying changes in vortex intensity, pressure dynamics, and energy metrics, it establishes a baseline for evaluating the procedure's clinical efficacy. Future research could focus on correlating these findings with long-term patient outcomes and exploring potential strategies for left ventricular remodeling post-surgery.</p>
+        </section>
+
+        <section class="section">
+            <h2>Key Takeaways</h2>
+            <ul>
+                <li><strong>Innovative Approach:</strong> Utilization of advanced flow reconstruction and vortex quantification techniques.</li>
+                <li><strong>Clinical Relevance:</strong> Insights gained can help refine surgical techniques and postoperative care for MR patients.</li>
+                <li><strong>Statistical Rigor:</strong> Robust analysis methods ensure the reliability of results.</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer class="bg-gray-800 text-white py-4 text-center mt-8">
+        <p>© Deerajkumar Parthipan</p>
+    </footer>
+</body>
+</html>

@@ -5,15 +5,112 @@ permalink: /publications/
 author_profile: true
 ---
 
+<style>
+.publication-item {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--text-color);
+    margin-right: -10rem;  /* Extend into the right margin */
+}
+.publication-content {
+    flex: 0 0 55%;  /* Reduced from 75% to give more space to images */
+    padding-right: 2rem;
+    min-width: 250px;  /* Reduced minimum to allow more image space */
+}
+.publication-image {
+    flex: 1;  /* Allow image to take remaining space */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.publication-image img {
+    width: 100%;
+    max-width: 700px;  /* Significantly larger maximum width */
+    height: auto;
+    border-radius: 4px;
+    object-fit: contain;
+}
+.publication-title {
+    font-family: var(--global-font-family);
+    font-size: var(--type-size-5);
+    line-height: inherit;
+}
+.publication-venue {
+    font-family: var(--global-font-family);
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+.publication-links {
+    margin-top: 1rem;
+}
+.publication-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--global-font-family);
+}
+.publication-links a:hover {
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+}
+.publication-citation {
+    font-family: var(--global-font-family);
+    font-size: var(--type-size-6);
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+@media screen and (max-width: 1400px) {
+    .publication-item {
+        margin-right: -5rem;
+    }
+    .publication-content {
+        flex: 0 0 60%;
+    }
+    .publication-image img {
+        max-width: 600px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .publication-item {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .publication-content {
+        flex: 1 0 100%;
+        padding-right: 0;
+        margin-bottom: 1.5rem;
+        order: 2;
+        min-width: auto;
+    }
+    .publication-image {
+        flex: 1 0 100%;
+        margin-bottom: 1rem;
+        order: 1;
+        justify-content: center;
+    }
+    .publication-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+</style>
+
+
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">You can also find my articles on <a href="{{https://www.researchgate.net/profile/Deerajkumar_Parthipan}}">my ResearchGate profile</a>.</div>
 {% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
@@ -23,14 +120,64 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      
+      <div class="publication-item">
+        <div class="publication-content">
+          <div class="publication-title">
+            <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+          </div>
+          <div class="publication-venue">{{ post.venue }}</div>
+          <div class="publication-excerpt">{{ post.excerpt }}</div>
+          <div class="publication-links">
+            {% if post.paperurl %}
+              <a href="{{ post.paperurl }}" target="_blank">PDF</a>
+            {% endif %}
+            {% if post.slidesurl %}
+              <a href="{{ post.slidesurl }}" target="_blank">Slides</a>
+            {% endif %}
+          </div>
+          <div class="publication-citation">
+            {{ post.citation }}
+          </div>
+        </div>
+        <div class="publication-image">
+          {% if post.image %}
+            <img src="{{ base_path }}/images/{{ post.image }}" alt="Publication thumbnail">
+          {% else %}
+            <img src="/api/placeholder/300/200" alt="Publication thumbnail">
+          {% endif %}
+        </div>
+      </div>
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    <div class="publication-item">
+      <div class="publication-content">
+        <div class="publication-title">
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+        </div>
+        <div class="publication-venue">{{ post.venue }}</div>
+        <div class="publication-excerpt">{{ post.excerpt }}</div>
+        <div class="publication-links">
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" target="_blank">PDF</a>
+          {% endif %}
+          {% if post.slidesurl %}
+            <a href="{{ post.slidesurl }}" target="_blank">Slides</a>
+          {% endif %}
+        </div>
+        <div class="publication-citation">
+          {{ post.citation }}
+        </div>
+      </div>
+      <div class="publication-image">
+        {% if post.image %}
+          <img src="{{ base_path }}/images/{{ post.image }}" alt="Publication thumbnail">
+        {% else %}
+          <img src="/api/placeholder/300/200" alt="Publication thumbnail">
+        {% endif %}
+      </div>
+    </div>
   {% endfor %}
 {% endif %}
-
-
-

@@ -1,0 +1,450 @@
+---
+layout: archive
+title: "Project Gallery"
+permalink: /gallery/
+author_profile: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-wrapper {
+            width: 100%;
+            max-width: 100%;
+            padding-right: 1rem;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 2rem;
+            padding: 1.5rem 0;
+        }
+
+        .gallery-item {
+            height: 100%;
+            break-inside: avoid;
+        }
+
+        .gallery-item.wide {
+            grid-column: span 2;
+        }
+
+        .card {
+            height: 100%;
+            transition: transform 0.3s ease;
+            background: transparent;
+            border: none;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            height: 300px;
+            width: 100%;
+            cursor: default;
+        }
+
+        .img-cover {
+            object-fit: cover;
+        }
+
+        .img-contain {
+            object-fit: contain;
+            background-color: #f8f9fa;
+            padding: 0.5rem;
+        }
+
+        .wide .card-img-top {
+            height: 400px;
+        }
+
+        .card-body {
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #333;
+            margin: 0;
+            cursor: default;
+        }
+
+        @media (max-width: 992px) {
+            .gallery-item.wide {
+                grid-column: span 1;
+            }
+
+            .wide .card-img-top {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 1.5rem;
+            }
+
+            .card-img-top {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-wrapper">
+        <div class="gallery-container">
+            <!-- CFD Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/FirstAid_Plane.JPG" class="card-img-top img-cover" alt="CFD Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">First-Aid VTOL</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CFD Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/Cansat.png" class="card-img-top img-contain" alt="CFD Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">CanSat CAD</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CFD Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/maple_seed_payload.png" class="card-img-top img-contain" alt="CFD Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">CanSat Payload (Exploded View)</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CFD Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/Cansat_container.png" class="card-img-top img-contain" alt="CFD Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">CanSat Container</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CFD Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/foldable_bike_open.JPG" class="card-img-top img-contain" alt="CFD Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Foldable Bike (Open)</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/foldable_bike_stowed.JPG" class="card-img-top img-contain" alt="CFD Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Foldable Bike (Stowed)</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEA Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/PiMac_Payload.JPG" class="card-img-top img-contain" alt="FEA Simulation">
+                    <div class="card-body">
+                        <h5 class="card-title">Rocket Payload (PiMac)</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEA Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/Aerostructure.JPG" class="card-img-top img-contain" alt="FEA Simulation">
+                    <div class="card-body">
+                        <h5 class="card-title">Aerostructure of Rocket</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Thermal Analysis Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/wheel.png" class="card-img-top img-cover" alt="Thermal Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Wheel CAD</h5>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <!-- Thermal Analysis Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/centifugal_fan.png" class="card-img-top img-cover" alt="Thermal Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Centrifugal Fan</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/gallery/autosegmentation.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Segmentation of Heart Ventricle</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/gallery/Blood_flow.gif" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Reconstructed Blood Velocity in Heart Left Ventricle</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/gallery/Aero_structure_cross.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Aerostructure of Rocket (Cross-section)</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/gallery/Engine.JPG" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Hybrid Rocket Engine (Cross-section)</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Machine Learning Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/PET_bottle.png" class="card-img-top img-cover" alt="Machine Learning">
+                    <div class="card-body">
+                        <h5 class="card-title">PET Bottle</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thermal Analysis Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/HINGE.jpg" class="card-img-top img-cover" alt="Thermal Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Hinge CAD</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Processing Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/plier_final.png" class="card-img-top img-cover" alt="Image Processing">
+                    <div class="card-body">
+                        <h5 class="card-title">Pliers CAD</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thermal Analysis Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/chair.png" class="card-img-top img-cover" alt="Thermal Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Chair CAD</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Thermal Analysis Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/Flange_coupler.png" class="card-img-top img-cover" alt="Thermal Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Flange Coupler CAD</h5>
+                    </div>
+                </div>
+            </div>
+
+
+                <!-- Thermal Analysis Project -->
+                <div class="gallery-item">
+                    <div class="card">
+                        <img src="/images/gallery/Car_hood.png" class="card-img-top img-cover" alt="Thermal Analysis">
+                        <div class="card-body">
+                            <h5 class="card-title">Car Hood CAD</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/publications/swbli_mesh.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">SWBLI Structured Dynamic Mesh</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/publications/swbli.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">SWBLI Shock Bubble</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/publications/swbli_1.jpg" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">SWBLI Shock Bubble at Different Angles</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/gallery/cross_flow_mesh.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Cross-Flow Over Cooling Fins (Hybrid Mesh)</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/gallery/jet_impingement_mesh.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Jet Impingement Over Cooling Fins (Hybrid Mesh)</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/publications/jet_vs_cross.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Pin Fin Temperature Comparison (Cross-Flow vs Jet-Impingement)</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Thermal Analysis Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/without_velocity_II_100_temp.png" class="card-img-top img-cover" alt="Thermal Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Fluid Heated with Laser (Without Fluid Velocity)</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Thermal Analysis Project -->
+            <div class="gallery-item">
+                <div class="card">
+                    <img src="/images/gallery/with_velocity_II_100_temp.png" class="card-img-top img-cover" alt="Thermal Analysis">
+                    <div class="card-body">
+                        <h5 class="card-title">Fluid Heated with Laser (Without Fluid Velocity)</h5>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/gallery/Sarin_gas.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarin Gas Spread Over Buildings in a City</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/gallery/Flange_coupling_1.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Flange Coupling Drawing (1/2)</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/gallery/Flange_coupling_2.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Flange Coupling Drawing (2/2)</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CAD Project -->
+            <div class="gallery-item wide">
+                <div class="card">
+                    <img src="/images/gallery/Draw1.png" class="card-img-top img-contain" alt="CAD Design">
+                    <div class="card-body">
+                        <h5 class="card-title">Flange Coupling Part</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

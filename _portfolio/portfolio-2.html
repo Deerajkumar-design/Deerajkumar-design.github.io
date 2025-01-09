@@ -1,7 +1,142 @@
 ---
-title: "Portfolio item number 2"
-excerpt: "Short description of portfolio item number 2 <br/><img src='/images/500x300.png'>"
+title: "3D Numerical Simulation of a Sarin Release"
+excerpt: "Simulating Safety: Predicting Sarin Gas Dispersion in Urban Environments with CFD Precision. <br/><img src='/images/gallery/Sarin_gas.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Numerical Simulation of a Sarin Release</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Grid container: 3 columns on medium screens and above -->
+    <div class="md:grid md:grid-cols-3 md:gap-6">
+      
+      <!-- LEFT: Main Content (span 2 columns on md+) -->
+      <div class="md:col-span-2">
+        <header class="mb-12">
+          <h1 class="text-4xl font-bold mb-4">Simulating Safety: Predicting Sarin Gas Dispersion in Urban Environments with CFD Precision.</h1>
+        </header>
+
+        <!-- Section: Introduction -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">Introduction</h2>
+          <p class="mb-4">
+            The leakage of sarin gas in an urban environment can be harmful. This project investigates the dispersion of sarin gas using Computational Fluid Dynamics (CFD) to solve turbulence models and visualize the gas spread.
+          </p>
+        </section>
+
+        <!-- Section: CFD Simulations -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">CFD Simulations</h2>
+          <div class="prose">
+            <p class="mb-4">
+              The CFD equations were solved using the finite difference method in ANSYS Fluent. The simulation incorporated:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li><strong>Flow Model:</strong> Steady-state, incompressible flow, 3D</li>
+              <li><strong>Equations Solved:</strong> Navier-Stokes, Energy, and Continuity equations</li>
+              <li><strong>Turbulence Model:</strong> Realizable k-ϵ model</li>
+              <li><strong>Algorithm:</strong> SIMPLEC for efficient computation</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section: Mesh Details -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">Mesh Details</h2>
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-3">Mesh Specifications</h3>
+            <ul class="list-disc pl-6 space-y-2">
+              <li><strong>Total Elements:</strong> 0.35 million</li>
+              <li><strong>Minimum Mesh Quality:</strong> 0.44</li>
+              <li><strong>Discretization Tool:</strong> ICEM</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section: Boundary Conditions -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">Boundary Conditions</h2>
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-3">Simulation Parameters</h3>
+            <p class="mb-4">Wind velocity: 3 m/s; Sarin release velocity: 150 m/s. A multiphase mixture flow model was considered with air and sarin gas phases.</p>
+            
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+              <table class="min-w-full">
+                <thead class="bg-gray-800 text-white">
+                  <tr>
+                    <th class="px-6 py-3 text-left">Property</th>
+                    <th class="px-6 py-3 text-right">Value</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-6 py-4">Density (kg/m³)</td>
+                    <td class="px-6 py-4 text-right">4.86</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4">Thermal Conductivity (W/mK)</td>
+                    <td class="px-6 py-4 text-right">0.3694</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4">Viscosity (kg/ms)</td>
+                    <td class="px-6 py-4 text-right">0.001353</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4">Molecular Weight (kg/kmol)</td>
+                    <td class="px-6 py-4 text-right">140.1</td>
+                  </tr>
+                  <tr>
+                    <td class="px-6 py-4">Reference Temperature (K)</td>
+                    <td class="px-6 py-4 text-right">300</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section: Results -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">Results</h2>
+          <div class="mb-8">
+            <h3 class="text-xl font-semibold mb-3">Contamination Analysis</h3>
+            <p class="mb-4">
+              Contamination was studied at various altitudes:
+            </p>
+            <ul class="list-disc pl-6 space-y-2">
+              <li><strong>Ground Level (0m):</strong> Moderate spread</li>
+              <li><strong>Low Altitude (3m):</strong> Increasing concentration</li>
+              <li><strong>Mid Altitude (5m):</strong> Maximum spread observed</li>
+              <li><strong>High Altitude (10m, 15m):</strong> Decreasing concentration pattern</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section: Conclusion -->
+        <section class="mb-12">
+          <h2 class="text-2xl font-semibold mb-4">Conclusion</h2>
+          <p class="mb-4">
+            The study concluded that the sarin gas spread is limited under the simulated conditions, though proximity to the contamination zone poses risks. These findings contribute to understanding urban contamination patterns and can aid in developing safety protocols.
+          </p>
+        </section>
+      </div>
+      
+      <!-- RIGHT: Now empty column for future use -->
+      <div class="md:col-span-1 flex flex-col space-y-4 mt-8 md:mt-0">
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-gray-800 text-white py-4 text-center mt-8">
+    <p>© Deerajkumar Parthipan</p>
+  </footer>
+</body>
+</html>

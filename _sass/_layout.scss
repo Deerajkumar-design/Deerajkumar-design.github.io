@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Page wrapper
+   ========================================================================== */
+
+   .page__wrapper {
+    position: relative;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1em;
+    
+    @include breakpoint($large) {
+      padding: 2em;
+      display: grid;
+      grid-template-columns: $sidebar-width-narrow 1fr $right-sidebar-width-narrow;
+      gap: 2em;
+    }
+  
+    @include breakpoint($x-large) {
+      grid-template-columns: $sidebar-width 1fr $right-sidebar-width;
+      max-width: $max-width;
+    }
+  }
+  
+  .page__content {
+    position: relative;
+    width: 100%;
+    
+    @include breakpoint($large) {
+      grid-column: 2;
+      min-width: 0; // Fix for text overflow in grid
+    }
+  }

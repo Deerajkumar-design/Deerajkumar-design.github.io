@@ -5,23 +5,30 @@
 # prevent it from being included in the site.
 
 main:
+
+  - title: "Projects"
+    url: /portfolio/
+
+  - title: "Industry Experience"
+    url: /industry-experience/ 
+
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  # - title: "Talks"
+  #   url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  # - title: "Teaching"
+  #   url: /teaching/    
     
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
+  # - title: "Blog Posts"
+  #   url: /year-archive/
     
   - title: "CV"
     url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+  
+
+  - title: "Gallery"
+    url: /gallery/
+  # - title: "Guide"
+  #   url: /markdown/
